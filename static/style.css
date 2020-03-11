@@ -1,0 +1,205 @@
+body {
+    background-color: #303030;
+}
+
+div {
+    position: relative;
+}
+
+p {
+    margin: 0;
+}
+
+a {text-decoration: none;}
+
+div.ab {
+    position: relative;
+    width: 700px;
+    height: 210px;
+    margin: 50px 0;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    z-index: -2;     
+}
+
+#header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;    
+    z-index: 1;
+}
+
+div.snake {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+#animation1 {
+    animation-name: snake1;
+}
+
+#animation2 {
+    animation-name: snake2;
+}
+
+@keyframes snake1 {
+    0% {top: -92px; left: 0px}
+    5.5% {top: 0px; left: -92px}
+    11.5% {top: 110px; left: -92px}
+    17% {top: 202px; left: 0px}
+    50% {top: 202px; left: 600px}
+    55.5% {top: 110px; left: 692px}
+    61.5% {top: 0px; left: 692px}
+    67% {top: -92px; left: 600px}
+    100% {top: -92px; left: 0px}
+    0% {background-color: maroon}
+    5.77% {background-color: green}
+    11.54% {background-color: lime}
+    30.77% {background-color: blue}
+    50% {background-color: cyan}
+    55.77% {background-color: gold}
+    61.54% {background-color: yellow}
+    80.77% {background-color: red}
+    100% {background-color: maroon}
+}
+
+@keyframes snake2 {
+    0% {top: 202px; left: 600px}
+    5.50% {top: 110px; left: 692px}
+    11.50% {top: 0px; left: 692px}
+    17% {top: -92px; left: 600px}
+    50% {top: -92px; left: 0px}
+    55.50% {top: 0px; left: -92px}
+    61.50% {top: 110px; left: -92px}
+    67% {top: 202px; left: 0px}
+    100% {top: 202px; left: 600px}
+    0% {background-color: maroon}
+    5.77% {background-color: green}
+    11.54% {background-color: lime}
+    30.77% {background-color: blue}
+    50% {background-color: cyan}
+    55.77% {background-color: gold}
+    61.54% {background-color: yellow}
+    80.77% {background-color: red}
+    100% {background-color: maroon}
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.item {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    /* background: red; */
+    align-items: center;
+    border: 1px solid #c7bc92;
+    border-radius: 5px;
+}
+
+img.icon {
+    margin: 0 10px;
+}
+
+.itemtext {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    align-items: center;
+    left: 10px;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+a.mainlink {
+    color: #c7bc92;
+    margin: 0 20px 100px 20px;
+}
+/* a.mainlink:hover {text-decoration: underline;} */
+a.mainlink:hover .item {background: #5a5a5a;}
+
+#copyright {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    bottom: 0px;
+    width: 100%;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    color: #c7bc92;
+    border-top: 1px solid #5a5a5a;
+}
+
+#copyright a {color: #c7bc92;}
+#copyright a:hover {text-decoration: underline;}
+
+/*
+div.billiard {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#b1 {
+    background-color: #transparent;
+    top: 290px;
+    animation-name: blueball;
+}
+
+#b2 {
+    background-color: #transparent;
+    top: 275px;
+    left: 600px;
+    animation-name: redball;
+}
+
+#b3 {
+    background-color: #transparent;
+    top: 305px;
+    left: 600px;
+    animation-name: yellowball;
+}
+
+@keyframes blueball {
+    0% {background-color: #transparent; left: 10%}
+    10% {background-color: #transparent; left: 10%}
+    50% {background-color: #blue; left: 570px}
+    100% {background-color: #transparent; left: 90%}
+}
+
+@keyframes redball {
+    0% {background-color: #transparent; left: 600px; top: 275px}
+    50% {background-color: #red; left: 600px; top: 275px}
+    100% {background-color: #transparent; left: 90%; top: 30%}
+}
+
+@keyframes yellowball {
+    0% {background-color: #transparent; left: 600px; top: 305px}
+    50% {background-color: #yellow; left: 600px; top: 305px}
+    100% {background-color: #transparent; left: 90%; top: 60%}
+}
+*/
+
+/* ANIMATION */

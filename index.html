@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class='ab'>
+        <img id='header' src="{{url_for('static',filename='img/brandz.png')}}"></img>
+        <div id='shade'></div>
+        <div class='snake' id='animation1'></div>
+        <div class='snake' id='animation2'></div>
+    </div>
+    <div class='container'>
+        {% for item in items %}
+        <a class="mainlink" href="/page">
+            <div class='item'><img class='icon' src="{{ url_for('static', filename='img/'+item[1]) }}">
+            <div class="itemtext">{{ item[0].capitalize() }}</div></div>
+        </a>
+        {% endfor %}
+    </div>
+    <div id="copyright"><p>© 2020 <a href="mailto:jasonnfi8@gmail.com">Hiếu Nguyễn</a></p></div>
+</body>
+</html>
