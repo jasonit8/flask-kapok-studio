@@ -1,6 +1,7 @@
 # Flask Website: Kapok Studio
 
 ### Requirement:
+Python
 pip install flask
 
 ### Execution:
