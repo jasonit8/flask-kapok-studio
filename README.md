@@ -1,4 +1,4 @@
-# <span style="color=blue">Flask Project: Kapok Studio</span>
+# Flask Website: Kapok Studio
 
 ### Requirement:
 pip install flask
